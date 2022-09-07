@@ -1,9 +1,11 @@
 package com.MonikaIT.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.MonikaIT.Entity.Contact;
+import com.MonikaIT.model.Contact;
 
-public interface ContactRepository extends JpaRepository<Contact,Integer>  {
+@Repository
+public interface ContactRepository extends JpaRepository<Contact, Integer> {
 
 }
